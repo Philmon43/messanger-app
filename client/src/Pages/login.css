@@ -1,0 +1,19 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    border-left: 2px solid #333;
+    height: 40px;
+    margin: 10px;
+}
+
+.login__nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}

@@ -1,0 +1,31 @@
+.taskPopUp{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pickup{
+    background: dodgerblue;
+}
+.dropoff{
+    background: rgb(153, 203, 77);
+}

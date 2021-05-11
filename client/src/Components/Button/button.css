@@ -1,0 +1,36 @@
+.button{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+.button:active{
+    opacity: .7;
+}
+
+.signin{
+    width: 100%;
+    background: var(--secondary);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.navigationBtn{
+    background: var(--primary);
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+.primary{
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
