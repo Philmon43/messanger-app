@@ -1,10 +1,9 @@
-require("./src/db/mongoose")
+require("./db/mongoose")
 require('dotenv').config()
 const express = require("express")
-const userRouter = require("./src/routers/user")
-const taskRouter = require("./src/routers/tasks")
+const userRouter = require("./routers/user")
+const taskRouter = require("./routers/tasks")
 const cors = require('cors')
-const path = require("path")
 
 const app = express()
 app.use(express.json())
