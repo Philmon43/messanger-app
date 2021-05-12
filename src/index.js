@@ -13,7 +13,9 @@ app.use(userRouter)
 app.use(taskRouter)
 const port = process.env.PORT || 5000;
 
-const publicDirectory = path.join(__dirname, "client/build");
+const publicDirectory = path.join(__dirname, "../client/build");
+
+// console.log(path.join(__dirname, "../client/build"))
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(publicDirectory))
