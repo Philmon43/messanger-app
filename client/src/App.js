@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await Axios.get("/", { headers: { "Authorization": cookies.token } })
+        const data = await Axios.get("/user", { headers: { "Authorization": cookies.token } })
         if (data.status === 200) {
           setLogin(true)
           setUser(data.data)

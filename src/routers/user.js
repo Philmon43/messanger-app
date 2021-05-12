@@ -4,7 +4,7 @@ const User = require("../models/UserModel")
 const auth = require("../middleware/auth");
 
 
-router.get("/", auth, async (req, res) => {
+router.get("/user", auth, async (req, res) => {
     res.send(req.user)
  });
  

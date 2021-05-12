@@ -5,7 +5,6 @@ const userRouter = require("./routers/user")
 const taskRouter = require("./routers/tasks")
 const cors = require('cors')
 const port = process.env.PORT || 5000
-const path = require("path")
 
 const app = express()
 app.use(express.json())
@@ -16,7 +15,7 @@ app.use(taskRouter)
 
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "../client/build")))
+    app.use(express.static("client/build"))
 }
 
 app.listen(port, () => console.log("Server is up on port ", port));
