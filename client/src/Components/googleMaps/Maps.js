@@ -9,7 +9,7 @@ const mapStyles = {
 const MapContainer = ({ google, data }) => {
     const [lat, setLat]= useState(null)
     const [lng, setLng] = useState(null)
-    const [zoom, setZoom ] = useState(16)
+    const [zoom] = useState(16)
     
   
     useEffect(() => {
@@ -29,7 +29,8 @@ const MapContainer = ({ google, data }) => {
                 zoom={zoom}
                 style={mapStyles}
                 center={{ lat, lng}}
-                disableDefaultUI>
+                disableDefaultUI
+            >
                   <Marker
                       name={'Your position'}
                       position={{lat, lng}}

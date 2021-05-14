@@ -37,3 +37,13 @@
     height: 100vh;
     overflow: hidden;
 }
+
+.box_modal{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.box_modal > *{
+    margin: 20px 0;
+}

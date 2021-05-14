@@ -15,6 +15,7 @@ const Main = ({ data,  onLogOut}) => {
     const [task, setTask] = useState(null)
     const [hasTask, setHasTask] = useState(false)
     const [accepted, setAccepted] = useState(null)
+    const [customer, setCustomer] = useState(null)
 
     useEffect(() => {
         const fetchInterval = setInterval(async() => {
@@ -27,6 +28,10 @@ const Main = ({ data,  onLogOut}) => {
             }
         }, 5000);
         return () => clearInterval(fetchInterval)
+    })
+
+    useEffect(() => {
+        
     })
 
 
@@ -67,7 +72,7 @@ const Main = ({ data,  onLogOut}) => {
         setHasTask(false)
         setAccepted(null)
     }
-
+console.log()
     return (
         <div className="main__action__page">
             {sideBar&&<div className="sidebar">
@@ -95,10 +100,11 @@ const Main = ({ data,  onLogOut}) => {
                 />
 
                 {hasTask&&<Task type="pickup">
-                    <div>
-                        <h2>Restaurant</h2>
+                    <div className="box_modal">
+                        <h3>{data.firstName} You'v Got Pickup Task 10 mins</h3>
+                        <h3>Restaurant</h3>
                         <div>{task[0].restaurant.name}</div>
-                        <h2>Street</h2>
+                        <h3>Street</h3>
                         <div>{task[0].restaurant.street}</div>
                     </div>
                     <Button
