@@ -25,7 +25,6 @@ const SignIn = ({ onRegister, onLogIn, handleSuccess }) => {
                 setCookie("token", data.data.token)
                 setError(false)
                 handleSuccess(true)
-                console.log(data.data.token)
             }
         } catch (e) {
             setError(true)

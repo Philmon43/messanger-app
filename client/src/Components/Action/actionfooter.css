@@ -32,3 +32,15 @@
 .task__desc{
    padding: 10px;
 }
+
+.centerBtn{
+   background: url("https://iconarchive.com/download/i88480/icons8/ios7/Maps-Center-Direction.ico");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0%;
+   height: 40px;
+   width: 40px;
+   position: absolute;
+   top: -50px;
+   left: 10px;
+}
